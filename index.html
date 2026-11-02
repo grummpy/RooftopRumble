@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rooftop Rumble</title>
+  <link rel="icon" href="assets/icon.jpg" />
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #07060d;
+      color: #f4efe6;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    }
+    body {
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    canvas {
+      width: min(100vw, 177.78vh);
+      height: min(100vh, 56.25vw);
+      background: #07060d;
+      touch-action: none;
+    }
+    #live {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="1280" height="720" tabindex="0">Rooftop Rumble</canvas>
+  <div id="live" aria-live="polite"></div>
+  <script type="module" src="src/ui/main.js?v=1"></script>
+</body>
+</html>

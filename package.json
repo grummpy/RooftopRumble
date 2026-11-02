@@ -1,0 +1,12 @@
+{
+  "name": "rooftop-rumble",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ninjas race across city rooftops to steal and keep the scroll.",
+  "scripts": {
+    "start": "python3 server.py",
+    "test": "node --test tests/ && python3 tests/server_smoke.py"
+  },
+  "license": "MIT"
+}
